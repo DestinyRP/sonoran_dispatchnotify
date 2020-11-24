@@ -233,7 +233,7 @@ if pluginConfig.enabled then
                         TriggerClientEvent("pNotify:SendNotification", k, {
                             text = message,
                             type = "error",
-                            layout = "bottomcenter",
+                            layout = "topright",
                             timeout = "10000"
                         })
                     end
@@ -356,7 +356,7 @@ if pluginConfig.enabled then
                 TriggerClientEvent("pNotify:SendNotification", playerId, {
                     text = pluginConfig.notifyMessage:gsub("{officer}", officerName),
                     type = "error",
-                    layout = "bottomcenter",
+                    layout = "topright",
                     timeout = "10000"
                 })
             elseif pluginConfig.callerNotifyMethod == "custom" then
